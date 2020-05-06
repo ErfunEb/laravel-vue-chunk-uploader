@@ -61,8 +61,16 @@ class UploadsController extends Controller
                 'size'              => $fileSize
             ));
 
-            $type = 'w';
+            $type = 'ab+';
 
+        }
+
+        $dir_name = public_path('uploads');
+
+        //Check if the directory with the name already exists
+        if (!is_dir($dir_name)) {
+            //Create our directory if it does not exist
+            mkdir($dir_name);
         }
 
         // writing or appending to the file based on the status
