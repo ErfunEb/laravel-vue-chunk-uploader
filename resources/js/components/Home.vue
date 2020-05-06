@@ -31,7 +31,7 @@
             return {
                 file: null,
                 fileID: null,
-                chunkSizeInMB: 20,
+                chunkSizeInMB: 3,
                 chunkSize: null,
                 chunk: null,
                 chunks: null,
